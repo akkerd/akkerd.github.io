@@ -5,9 +5,9 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/favicon.png" type="image/png">
-	<title>Diego Tobarra's Portfolio</title>
-	<!-- Bootstrap CSS -->
+	<link rel="icon" href="img/favicon2.png" type="image/png">
+	<title>Portfolio by Diego Tobarra</title>
+		<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -16,69 +16,43 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Load handlebar elements -->
+	<script type='text/javascript' src='js/handlebars-v4.1.1.js'></script>
+	<script src="js/templates.js"></script>
+	<script>
+		window.onload = function () {
+			loadNavbar(0);
+			loadPortfolio();
+			//loadTestimonials();
+			loadFooter();
+		};
+	</script>
 </head>
 
 <body>
 
 	<!--================ Start Header Area =================-->
-	<header class="header_area">
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img src="img/name.png" alt=""></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav justify-content-end">
-							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-							<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-							<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-									<li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portfolio Details</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Blog</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-								</ul>
-							</li>
-							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
+	<div id="navbar"></div>
 	<!--================ End Header Area =================-->
 
 	<!--================ Start Home Banner Area =================-->
+	<div id="banner"></div>
 	<section class="home_banner_area">
 		<div class="banner_inner">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-7">
 						<div class="banner_content">
-							<h1 class="text-uppercase">WORK IN PROGRESS</h1>
-							<h3 class="text-uppercase">Hell0</h3>
-							<h1 class="text-uppercase">I am Diego Tobarra</h1>
-							<h5 class="text-uppercase">Software Engineer<br/>MSc. in game and web development</h5>
+							<h3 class="text-uppercase">Hi!</h3>
+							<h1 class="text-uppercase">I am Diego Tobarra </h1>
+							<h5 class="text-uppercase">
+								Software Engineer
+								<br/>
+								Game and Web Application Developer</h5>
 							<div class="d-flex align-items-center">
-								<a class="primary_btn" href="#"><span>Hire Me</span></a>
-								<a class="primary_btn tr-bg" href="#"><span>Get CV</span></a>
+								<a class="primary_btn" href="contact.html"><span>Hire Me</span></a>
+								<a class="primary_btn tr-bg" target="blank" href="docs/Diego Tobarra - Curiculum Vitae.pdf"><span>Get my CV</span></a>
 							</div>
 						</div>
 					</div>
@@ -92,38 +66,6 @@
 		</div>
 	</section>
 	<!--================ End Home Banner Area =================-->
-
-	<!--================ Start About Us Area =================-->
-	<section class="about_area section_gap">
-		<div class="container">
-			<div class="row justify-content-start align-items-center">
-				<div class="col-lg-5">
-					<div class="about_img">
-						<img class="" src="img/about-us.png" alt="">
-					</div>
-				</div>
-
-				<div class="offset-lg-1 col-lg-5">
-					<div class="main_title text-left">
-						<h2>let’s <br>
-							Introduce about <br>
-							myself</h2>
-						<p>
-							Whose given. Were gathered. There first subdue greater. Bearing you Whales heaven 
-							midst their. Beast creepeth. Fish days.
-						</p>
-						<p>
-							Is give may shall likeness made yielding spirit a itself together created after sea 
-							is in beast beginning signs open god you're gathering whose gathered cattle let. 
-							Creature whales fruit unto meat the life beginning all in under give two.
-						</p>
-						<a class="primary_btn" href="#"><span>Download CV</span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End About Us Area =================-->
 
 	<!--================ Srart Brand Area =================-->
 	<section class="brand_area section_gap_bottom">
@@ -236,36 +178,36 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="feature_item">
 						<img src="img/services/s3.png" alt="">
-						<h4>Game development</h4>
-						<p>I have made several games in Unity and Unreal Engine, 
-							published 1 game for mobile/smartphones and I am currently 
-							working on the side on a game for PC that we will publish soon!</p>
+						<h4>Gameplay programming</h4>
+						<p>I have experience making games in Unity and Unreal Engine. I have  
+							1 game published at the Play and App Store (check Edge of Sanity below) 
+							and I am currently working in my free time on a 3D Sokoban game for PC.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="feature_item">
 						<img src="img/services/s2.png" alt="">
 						<h4>Leading teams</h4>
-						<p>I have experience leading programming teams from 3 to 6 people. 
-							Leading teams comes naturally with my personality, as I enjoy helping people
-							organizing work and taking responsabilities.</p>
+						<p>I have experience leading technical teams from 3 to 6 people. 
+							My experience as lead programmer at the DADIU program in Copenhagen has taught
+							me to solve problems and help other to solve them.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="feature_item">
 						<img src="img/services/s1.png" alt="">
-						<h4>Web development</h4>
-						<p>I have done a several of web application projects in my part-time job for 2 years 
-						in the Royal Hospital of Copenhagen.</p>
+						<h4>Web applications</h4>
+						<p>I have recently done several web application projects in my part-time job, during my 2 years 
+						working at the MedTech Team in the Royal Hospital of Copenhagen.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="feature_item">
 						<img src="img/services/s4.png" alt="">
-						<h4>CS Solutions</h4>
-						<p>Databases, job automation with Jenkins, data structure optimizations, algorithms... 
-						I have studied the theory thouroughly during my education. And I am looking forward 
-						to apply my knowledge in real life solutions. </p>
+						<h4>Computer Science</h4>
+						<p>I have studied for 8 years now Computer Science: Data structures and algorithms, 
+						mathematics, databases, UX, machine learning... All together 
+						gives me a solid background that I use to approach the challenges that I encounter.</p>
 					</div>
 				</div>
 			</div>
@@ -274,13 +216,78 @@
 	<!--================ End Features Area =================-->
 
 	<!--================Start Portfolio Area =================-->
+
+	<script  id="carousel_image" type="text/x-handlebars-template">
+	</script>
+
+	<script  id="carousel_video" type="text/x-handlebars-template">
+	</script>
+
+	<script  id="carousel_item" type="text/x-handlebars-template">
+				<li data-target="#myCarousel" data-slide-to="{{index}}"></li>
+	</script>
+
+	<script  id="carousel_template" type="text/x-handlebars-template">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+
+				<div class="item active">
+						<video width="320" height="240" controls>
+							<source src="vid/fight_drome.mp4" type="video/mp4"/>
+							Your browser does not support the video tag.
+						</video>
+				</div>
+
+				<div class="item">
+					<img src="img/name.png" alt="Test"/>
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</script>
+
+	<script id="portfolio_entry_template" type="text/x-handlebars-template">
+		<div class="col-lg-4 col-md-6 {{tag}}">
+			<div class="portfolio_box">
+				<div class="single_portfolio">
+					<img class="img-fluid w-100" src="{{image_url}}" alt=""/>
+					<div class="overlay"></div>
+					<a href="{{carousel_url}}" class="img-gal">
+						<div class="icon">
+							<span class="lnr lnr-cross"></span>
+						</div>
+					</a>
+				</div>
+				<div class="short_info">
+					<h4><a href="portfolio-details.html">{{title}}</a></h4>
+					<p>{{description}}</p>
+				</div>
+			</div>
+		</div>
+	</script>
+
 	<section class="portfolio_area" id="portfolio">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="main_title text-left">
-						<h2>quality work <br>
-							Recently done project </h2>
+						<h2>Portfolio</h2>
 					</div>
 				</div>
 			</div>
@@ -296,6 +303,7 @@
 	
 			<div class="filters-content">
 				<div class="row portfolio-grid justify-content-center">
+					
 					<div class="col-lg-4 col-md-6 all unity">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
@@ -308,147 +316,164 @@
 								</a>
 							</div>
 							<div class="short_info">
-								<h4><a href="portfolio-details.html">Edge of Sanity</a></h4>
-								<p>Published videogame for Android and iOS, made with Unity.</p>
+								<h4><a href="">Edge of Sanity</a></h4>
+								<p>Published videogame for Android and iOS, made with Unity. Graduation game for the DADIU program of 2019 and nominated to the IMG Awards.</p>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 col-md-6 all unity">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p2.jpg" alt="">
+								<img class="img-fluid w-100" src="img/portfolio/fight_drome.PNG" alt="">
 								<div class="overlay"></div>
-								<a href="img/portfolio/p2.jpg" class="img-gal">
+								<a href="img/portfolio/fight_drome.PNG" class="img-gal">
 									<div class="icon">
 										<span class="lnr lnr-cross"></span>
 									</div>
 								</a>
 							</div>
 							<div class="short_info">
-								<h4><a href="portfolio-details.html">Paint wall</a></h4>
-								<p>Animated, portfolio</p>
+								<h4><a href="">Fight Drome</a></h4>
+								<p>Short videogame for Android, made with Unity. Inspired by the Altered Carbon story world.</p>
 							</div>
 						</div>
 					</div>
+
+					<div class="col-lg-4 col-md-6 all unreal">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/finalposter_eos.jpg" alt="">
+								<div class="overlay"></div>
+								<a href="portfolio-details.html" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="">Gods of Soko</a></h4>
+								<p>Videogame prototype made with Unreal. It uses a procedural algorithm to create Sokoban levels.</p>
+							</div>
+						</div>
+					</div>
+
 					<div class="col-lg-4 col-md-6 all unity">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p3.jpg" alt="">
+								<img class="img-fluid w-100" src="img/portfolio/amok_shooter.png" alt="Amok shooter VR project">
 								<div class="overlay"></div>
-								<a href="img/portfolio/p3.jpg" class="img-gal">
+								<a href="img/portfolio/amok_shooter.png" class="img-gal">
 									<div class="icon">
 										<span class="lnr lnr-cross"></span>
 									</div>
 								</a>
 							</div>
 							<div class="short_info">
-								<h4><a href="portfolio-details.html">female light</a></h4>
-								<p>Animated, portfolio</p>
+								<h4><a href="">Amok Shooter VR</a></h4>
+								<p>VR Serious videogame made with Unity.</p>
+								<!--It was a project developed during two months at HEIG-VD university, Switzerland. It simulates a school shooting environment and has the purpose to train police officers to deal with extreme situations.-->
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6 all unreal">
+
+					<div class="col-lg-4 col-md-6 all unity">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p4.jpg" alt="">
+								<img class="img-fluid w-100" src="img/portfolio/bad_trucking.png" alt="Bad Trucking game">
 								<div class="overlay"></div>
-								<a href="img/portfolio/p4.jpg" class="img-gal">
+								<a href="img/portfolio/bad_trucking.png" class="img-gal">
 									<div class="icon">
 										<span class="lnr lnr-cross"></span>
 									</div>
 								</a>
 							</div>
 							<div class="short_info">
-								<h4><a href="portfolio-details.html">fourth air</a></h4>
-								<p>Animated, portfolio</p>
+								<h4><a href="">Bad Trucking</a></h4>
+								<p>Humoristic game prototype developed during the two days long Level-One Game Jam.</p>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 col-md-6 all web">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p6.jpg" alt="">
+								<img class="img-fluid w-100" src="img/portfolio/trial_finder.png" alt="">
 								<div class="overlay"></div>
-								<a href="img/portfolio/p5.jpg" class="img-gal">
+								<a href="img/portfolio/trial_finder.png" class="img-gal">
 									<div class="icon">
 										<span class="lnr lnr-cross"></span>
 									</div>
 								</a>
 							</div>
 							<div class="short_info">
-								<h4><a href="portfolio-details.html">together sign</a></h4>
-								<p>Animated, portfolio</p>
+								<h4><a href="">Eastern-Denmark Trial finder</a></h4>
+								<p>Web application developed with the Meteor framework and Node.js</p>
+								<!--for the Haematology department at Rigshospitalet. It serves doctors and nurses to find ongoing trials from other hospitals.-->
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 col-md-6 all web">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p5.jpg" alt="">
+								<img class="img-fluid w-100" src="img/portfolio/finalposter_eos.jpg" alt="">
 								<div class="overlay"></div>
-								<a href="img/portfolio/p6.jpg" class="img-gal">
+								<a href="portfolio-details.html" class="img-gal">
 									<div class="icon">
 										<span class="lnr lnr-cross"></span>
 									</div>
 								</a>
 							</div>
 							<div class="short_info">
-								<h4><a href="portfolio-details.html">multiply fowl</a></h4>
-								<p>Animated, portfolio</p>
+								<h4><a href="">GR-System</a></h4>
+								<p>Web application developed using JS and Python, using React and Django-Rest frameworks</p>
+								<!--for the Growth and Reproduction department at 
+								Rigshospitalet. It serves technicians to make their workflow more agile, 
+								automating process and integrating with npreviously existing systems. 
+								It was developed -->
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 col-md-6 all other">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p7.jpg" alt="">
+								<img class="img-fluid w-100" src="img/portfolio/mas_solver.PNG" alt="">
 								<div class="overlay"></div>
-								<a href="img/portfolio/p7.jpg" class="img-gal">
+								<a href="img/portfolio/mas_solver.PNG" class="img-gal">
 									<div class="icon">
 										<span class="lnr lnr-cross"></span>
 									</div>
 								</a>
 							</div>
 							<div class="short_info">
-								<h4><a href="portfolio-details.html">green heaven</a></h4>
-								<p>Animated, portfolio</p>
+								<h4><a href="">AI Multi-agent system to solve Sokoban puzzles</a></h4>
+								<p>Artifitial intelligence system that solves both Single-Agent and Multi-Agent 
+								Sokoban problems.</p>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 col-md-6 all other">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p8.jpg" alt="">
+								<img class="img-fluid w-100" src="img/portfolio/finalposter_eos.jpg" alt="">
 								<div class="overlay"></div>
-								<a href="img/portfolio/p8.jpg" class="img-gal">
+								<a href="portfolio-details.html" class="img-gal">
 									<div class="icon">
 										<span class="lnr lnr-cross"></span>
 									</div>
 								</a>
 							</div>
 							<div class="short_info">
-								<h4>fly male</h4>
-								<p>Animated, portfolio</p>
+								<h4><a href="portfolio-details.html">Procedural level generator for Sokoban puzzles</a></h4>
+								<p>MSc. thesis project. The program uses AI for level validation and adaptive difficulty.</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6 all unreal">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p9.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p9.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">season face</a></h4>
-								<p>Animated, portfolio</p>
-							</div>
-						</div>
-					</div>
+					
+					
 				</div>
 			</div>
 		</div>
@@ -456,157 +481,137 @@
 	<!--================End Portfolio Area =================-->
 
 	<!--================ Start Testimonial Area =================-->
+	<script id="testi_entry_template" type="text/x-handlebars-template">
+		<div class="row">
+			<div class="col-lg-4">
+				<img src="{{image_url}}" alt=""/>
+			</div>
+			<div class="col-lg-8">
+				<div class="testi_text">
+					<h4>{{name}}</h4>
+					<h5>{{title}}</h5>
+				<p>{{description}}</p>
+				</div>
+			</div>
+		</div>
+	</script>
+
 	<div class="testimonial_area section_gap_bottom">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
 					<div class="main_title">
-						<h2>client say about me</h2>
-						<p>Is give may shall likeness made yielding spirit a itself togeth created after sea is in beast <br>
-							 beginning signs open god you're gathering ithe</p>
+						<h2>Co-workers say about me</h2>
+						<p>I have collected some of my co-workers words about me and their experiences.</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="testi_slider owl-carousel">
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t1.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Elite Martin</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t2.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Davil Saden</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t1.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Elite Martin</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t2.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Davil Saden</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t1.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Elite Martin</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t2.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Davil Saden</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-			</div>
+				<div class="testi_slider owl-carousel" id="testi_elements">
+
+					<div class="testi_item">
+						<div class="row">
+							<div class="col-lg-4">
+								<img src="img/testimonials/t1.jpg" alt="">
+							</div>
+							<div class="col-lg-8">
+								<div class="testi_text">
+									<h4>Michael Rose</h4>
+									<h5>Associate Professor at DTU Compute</h5>
+									<p>Diego is so cool!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="testi_item">
+						<div class="row">
+							<div class="col-lg-4">
+								<img src="img/testimonials/t1.jpg" alt="">
+							</div>
+							<div class="col-lg-8">
+								<div class="testi_text">
+									<h4>David Kovacs</h4>
+									<h5>Leader of MedTek-Holdet at Rigshospitalet</h5>
+									<p>Diego is a compromised co-worker and a skillful programmer whose company during 2 years of 
+									work together has always been...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+										<div class="testi_item">
+						<div class="row">
+							<div class="col-lg-4">
+								<img src="img/testimonials/t1.jpg" alt="">
+							</div>
+							<div class="col-lg-8">
+								<div class="testi_text">
+									<h4>Alexander Frey</h4>
+									<h5>Game Director at Edge of Sanity</h5>
+									<p>Diego is so cool!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="testi_item">
+						<div class="row">
+							<div class="col-lg-4">
+								<img src="img/testimonials/t1.jpg" alt="">
+							</div>
+							<div class="col-lg-8">
+								<div class="testi_text">
+									<h4>Mikkel Kolding</h4>
+									<h5>Audio Designer at Gods of Soko</h5>
+									<p>Diego is so cool!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="testi_item">
+						<div class="row">
+							<div class="col-lg-4">
+								<img src="img/testimonials/anonymous.jpg" alt="">
+							</div>
+							<div class="col-lg-8">
+								<div class="testi_text">
+									<h4>Borja Fernandez Gauna</h4>
+									<h5>Associate Professor at EHU Engineering School</h5>
+									<p>Diego Tobarra has showed himself as a highly motivated researcher in the fields of 
+									Computer graphics and Computer Science. He has achieved exceptional academic achievements 
+									and Diego’s intellectual capability and diligence help him to solve complex problems successfully.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="testi_item">
+						<div class="row">
+							<div class="col-lg-4">
+								<img src="img/testimonials/anonymous.jpg" alt="">
+							</div>
+							<div class="col-lg-8">
+								<div class="testi_text">
+									<h4>Juergen Ehrensberger</h4>
+									<h5>Professor and Director of IICT</h5>
+									<p>Mr Tobarra demonstrated a high level of knowledge and skills in software engineering, in
+										particular using the Unity3D engine. He was able to quickly identify the critical elements of
+										the problem setting, to devise suitable solutions and to implement and validate them in an
+										efficient manner.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
 		</div>
 	</div>
 	<!--================ End Testimonial Area =================-->
 
-	<!--================ Start Newsletter Area =================-->
-	{% comment %} <section class="newsletter_area">
-		<div class="container">
-			<div class="row justify-content-center align-items-center">
-				<div class="col-lg-12">
-					<div class="subscription_box text-center">
-						<h2 class="text-uppercase text-white">get update from anywhere</h2>
-						<p class="text-white">
-							Bearing Void gathering light light his eavening unto dont afraid. 
-						</p>
-						<div class="subcribe-form" id="mc_embed_signup">
-							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
-								<input name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email">
-								<div style="position: absolute; left: -5000px;">
-									<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-								</div>
-								<button class="primary-btn hover d-inline">Get Started</button>
-								<div class="info"></div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> {% endcomment %}
-	<!--================ End Newsletter Area =================-->
-
 	<!--================Footer Area =================-->
-	<footer class="footer_area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="footer_top flex-column">
-						<div class="footer_logo">
-							<a href="#">
-								<img src="img/originallogo2.png" alt="">
-							</a>
-							<h4>Follow Me</h4>
-						</div>
-						<div class="footer_social">
-							<a href="https://www.facebook.com/diego.tobarra" target="_blank"><i class="fa fa-facebook"></i></a>
-							<a href="https://www.linkedin.com/in/diego-tobarra" target="_blank"><i class="fa fa-linkedin"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row footer_bottom justify-content-center">
-				<p class="col-lg-8 col-sm-12 footer-text">
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		</div>
-	</footer>
+	<footer class="footer_area" id="footer"></footer>
 	<!--================End Footer Area =================-->
 
 	<!-- Optional JavaScript -->
